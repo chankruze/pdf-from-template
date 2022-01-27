@@ -12,7 +12,7 @@
   "author": "chankruze <chankruze@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/chankruze/pdffromhtml"
   },
   "license": "MIT",
   "engines": {
