@@ -23,7 +23,7 @@
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs src/pdffromhtml.ts",
     "start": "rollup -c rollup.config.ts -w",
-    "test": "jest --coverage --coverage",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
@@ -72,10 +72,6 @@
       "src/*.{js,ts}"
     ]
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": false
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -96,7 +92,6 @@
     "jest-config": "^27.4.7",
     "lint-staged": "^8.0.0",
     "lodash.camelcase": "^4.3.0",
-    "prettier": "^1.14.3",
     "prompt": "^1.0.0",
     "replace-in-file": "^3.4.2",
     "rimraf": "^2.6.2",
