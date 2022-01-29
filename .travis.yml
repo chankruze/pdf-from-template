@@ -6,7 +6,6 @@ notifications:
   email: false
 node_js:
   - '16'
-  - '11'
   - '10'
 script:
   - npm run test:prod && npm run build

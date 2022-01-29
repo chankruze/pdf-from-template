@@ -1,18 +1,18 @@
 {
-  "name": "pdffromhtml",
+  "name": "pdf-from-template",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/pdffromhtml.umd.js",
-  "module": "dist/pdffromhtml.es5.js",
-  "typings": "dist/types/pdffromhtml.d.ts",
+  "main": "dist/pdf-from-template.umd.js",
+  "module": "dist/pdf-from-template.es5.js",
+  "typings": "dist/types/pdf-from-template.d.ts",
   "files": [
     "dist"
   ],
   "author": "chankruze <chankruze@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chankruze/pdffromhtml"
+    "url": "https://github.com/chankruze/pdf-from-template"
   },
   "license": "MIT",
   "engines": {
@@ -21,10 +21,10 @@
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs src/pdffromhtml.ts",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs src/pdf-from-template.ts",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --coverage --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
@@ -87,12 +87,12 @@
     "commitizen": "^3.0.0",
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
-    "cz-conventional-changelog": "^2.1.0",
+    "git-cz": "^4.8.0",
     "husky": "^7.0.4",
     "jest": "^27.4.7",
     "jest-config": "^27.4.7",
     "lint-staged": "^8.0.0",
-    "lodash.camelcase": "^4.3.0",
+    "lodash.kebabcase": "^4.1.1",
     "prompt": "^1.0.0",
     "replace-in-file": "^3.4.2",
     "rimraf": "^2.6.2",
@@ -116,6 +116,7 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "inline-css": "^3.0.0",
+    "moment": "^2.29.1",
     "puppeteer": "^13.1.2"
   }
 }
