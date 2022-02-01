@@ -130,7 +130,6 @@ dist
 .pnp.*
 
 # docs
-docs
 
 # out
 */out
