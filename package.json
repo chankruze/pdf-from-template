@@ -1,8 +1,8 @@
 {
   "name": "pdf-from-template",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": [],
+  "version": "0.0.3",
+  "description": "Minimal PDF generation from a template",
+  "keywords": ["pdf", "template"],
   "main": "dist/pdf-from-template.umd.js",
   "module": "dist/pdf-from-template.es5.js",
   "typings": "dist/types/pdf-from-template.d.ts",
@@ -123,5 +123,6 @@
     "branches": [
       "main"
     ]
-  }
+  },
+  "homepage": "https://chankruze.github.io/pdf-from-template"
 }
